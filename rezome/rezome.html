@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rezome</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.rtl.min.css">
+    <style>
+        .top {
+            margin-top: 20px;
+        }
+
+        body {
+            background-image: url(../img/paszamine_com_1915_Full_HD.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        img {
+            border-radius: 100px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        img:hover {
+            box-shadow: 0 0px 10px;
+            padding: 3px;
+            background: #2c00ff;
+            border: red;
+        }
+        video{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<!-- ----------------------------------------- -->
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <marquee behavior="" direction="">
+                    <h1>Arkana</h1>
+                </marquee>
+                <video width="100%" controls muted src="./video/Arkana.mp4"></video>
+            </div>
+        </div>
+        <hr class="top">
+        <div class="row top">
+            <div class="col-md-12">
+                <marquee behavior="" direction="">
+                    <h1>motor</h1>
+                </marquee>
+                <video width="100%" controls muted src="./video/motor.mp4"></video>
+            </div>
+        </div>
+        <hr class="top">
+        <div class="row top">
+            <div class="col-md-12">
+                <marquee behavior="" direction="">
+                    <h1>digikala</h1>
+                </marquee>
+                <video width="100%" controls muted src="./video/digikala.mp4"></video>
+            </div>
+        </div>
+        <hr class="top">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top center">
+                    <img id="img" width="200px" height="200px" src="../img/photo_2021-09-27_08-21-02.jpg" alt="">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+        <hr class="top">
+
+    </div>
+    <!-- ----------------------------------------- -->
+    <!-- script -->
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script>
+        $('#img').hover(function () {
+            $('h3').text('محمد حسین عزیززاده')
+        })
+    </script>
+</body>
+
+</html>
